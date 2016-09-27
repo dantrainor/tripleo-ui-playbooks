@@ -47,6 +47,14 @@ sudo chmod 0440 /etc/sudoers.d/stack
 su - stack
 ```
 
+## Additional package dependencies
+```
+sudo yum localinstall -y http://rhos-release.virt.bos.redhat.com/repos/rhos-release/rhos-release-latest.noarch.rpm
+sudo rhos-release -P 9-director
+sudo yum update -y
+sudo yum install -y install wget git
+```
+
 ## Settings and Installation
 
 Clone this repository and create a `hosts` file:
